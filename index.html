@@ -1,0 +1,706 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahesh Biradar — Senior Software Engineer</title>
+  <meta name="description"
+    content="Portfolio of Mahesh Biradar, Senior Software Engineer specializing in Python, Django, PostgreSQL, MongoDB, Microservices Architecture, and API development at Ridecell India." />
+  <meta name="keywords"
+    content="Mahesh Biradar, Senior Software Engineer, Python Developer, Django, PostgreSQL, Microservices, Backend Engineer, Ridecell" />
+  <meta property="og:title" content="Mahesh Biradar — Senior Software Engineer" />
+  <meta property="og:description"
+    content="Senior Software Engineer with 5+ years experience in Python, Django, and Microservices." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+
+<body>
+
+  <!-- Particle Canvas -->
+  <canvas id="particle-canvas" style="position:fixed;inset:0;pointer-events:none;z-index:0;opacity:0.4;"></canvas>
+
+  <!-- ─── NAVIGATION ─── -->
+  <nav>
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">&lt;MB /&gt;</a>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─── HOME / HERO ─── -->
+  <section id="home">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          ✦ Available for Opportunities
+        </div>
+        <h1 class="hero-name">
+          Hi, I'm<br /><span>Mahesh Biradar</span>
+        </h1>
+        <div class="hero-role">
+          <strong><span id="typed-text">Senior Software Engineer</span><span
+              style="color:var(--accent-1);animation:pulse 1s infinite;display:inline-block;margin-left:2px;">|</span></strong>
+        </div>
+        <div class="hero-company">@ Ridecell India Pvt. Limited, Pune</div>
+        <p class="hero-description">
+          Building scalable backend systems with <strong>Python & Django</strong>, architecting microservices, and
+          transforming complex business requirements into elegant, automated solutions. 5+ years of engineering
+          excellence.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+            </svg>
+            View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            Get In Touch
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num" data-target="5" data-suffix="+">0+</div>
+            <div class="stat-label">Years Exp.</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-target="3" data-suffix="">0</div>
+            <div class="stat-label">Launches Led</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-target="10" data-suffix="+">0+</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-target="1" data-suffix="">0</div>
+            <div class="stat-label">DB Migrations</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image-container">
+        <div class="profile-glow-wrap">
+          <div class="profile-glow-ring"></div>
+          <div class="profile-img-frame">
+            <img src="profile.png" alt="Mahesh Biradar — Senior Software Engineer" />
+          </div>
+        </div>
+
+        <!-- Floating tech tags -->
+        <div class="tech-float tf-1">🐍 Python &amp; Django</div>
+        <div class="tech-float tf-2">🔷 PostgreSQL &amp; MongoDB</div>
+        <div class="tech-float tf-3">⚙️ Microservices</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── EXPERIENCE ─── -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title reveal">Experience</h2>
+      <span class="section-line reveal"></span>
+      <p class="section-subtitle reveal">My professional journey and key contributions at Ridecell India</p>
+
+      <div class="timeline">
+        <!-- Role Header -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">💼</div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-title">Backend Developer / Senior Software Engineer</div>
+                <div class="timeline-company">Ridecell India Pvt. Limited, Pune</div>
+              </div>
+              <span class="timeline-period">Mar 2021 – Present</span>
+            </div>
+            <p class="timeline-desc">
+              Leading backend engineering for mobility and fleet management solutions. Responsible for full-cycle
+              engineering — from requirement gathering and architecture design to implementation and production
+              deployment.
+            </p>
+          </div>
+        </div>
+
+        <!-- Database Migration -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">🗄️</div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-title">Database Migration</div>
+                <div class="timeline-company">Ridecell India Pvt. Limited</div>
+              </div>
+              <span class="timeline-period">MongoDB → PostgreSQL</span>
+            </div>
+            <ul class="achievement-list">
+              <li>Designed and implemented custom <strong>Django management commands</strong> to migrate a microservice
+                database from MongoDB to PostgreSQL, ensuring data integrity and efficient handling of complex data
+                relationships.</li>
+              <li>Streamlined the migration process by leveraging <strong>Django ORM and custom scripts</strong> to
+                automate data transfer, reduce downtime, and validate the accuracy of migrated data.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature Architecture Restructuring -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">🏗️</div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-title">Feature Architecture Restructuring &amp; Migration</div>
+                <div class="timeline-company">Ridecell India Pvt. Limited</div>
+              </div>
+              <span class="timeline-period">System Re-architecture</span>
+            </div>
+            <ul class="achievement-list">
+              <li>Redesigned and rearchitected a core feature to support a new system architecture, enhancing
+                <strong>scalability and performance</strong> while ensuring backward compatibility.
+              </li>
+              <li>Migrated and refactored data models to align with the new architecture, optimizing <strong>database
+                  interactions</strong> and improving data consistency across multiple countries.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- API Integration -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">🔗</div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-title">API Integration with Third-Party Vendors</div>
+                <div class="timeline-company">Ridecell India Pvt. Limited</div>
+              </div>
+              <span class="timeline-period">Multi-supplier Integration</span>
+            </div>
+            <ul class="achievement-list">
+              <li>Collaborated with multiple suppliers to integrate their APIs with our APIs, ensuring <strong>seamless
+                  data exchange</strong> and alignment with organizational requirements through in-depth system analysis
+                and structured API design.</li>
+              <li><strong>Mentored and trained junior developers</strong> to manage supplier integrations independently,
+                enabling project scalability and allowing focus on new strategic initiatives.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Lead the Project -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">🚀</div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-title">Lead the Project — Country Launches</div>
+                <div class="timeline-company">Ridecell India Pvt. Limited</div>
+              </div>
+              <span class="timeline-period">2 Country Launches</span>
+            </div>
+            <ul class="achievement-list">
+              <li>Spearheaded <strong>two country launches</strong> for a major project, managing all engineering and
+                solution tasks independently in collaboration with the product owner, delivering a successful deployment
+                on schedule.</li>
+              <li>Oversaw <strong>end-to-end execution</strong>, including system integration, API development, and
+                stakeholder coordination, ensuring seamless functionality and alignment with country-specific
+                requirements.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Quality Analysis -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">🔍</div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-title">Quality Analysis</div>
+                <div class="timeline-company">Ridecell India Pvt. Limited</div>
+              </div>
+              <span class="timeline-period">QA &amp; Testing</span>
+            </div>
+            <ul class="achievement-list">
+              <li>Manual Jira tickets testing for <strong>Frontend, Backend and Mobile</strong> applications.</li>
+              <li>Led the QA team in the release processes by following the <strong>SDLC lifecycle</strong>.</li>
+              <li>Conducted <strong>Integration testing</strong> to ensure APIs are perfectly integrated with
+                third-party vendor APIs.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Resolving Production Issues -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">🛠️</div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-title">Resolving Production Issues</div>
+                <div class="timeline-company">Ridecell India Pvt. Limited</div>
+              </div>
+              <span class="timeline-period">Post-launch Support</span>
+            </div>
+            <ul class="achievement-list">
+              <li>Post-launch debugging and resolving <strong>production issues</strong> for new tenant features.</li>
+              <li>Analyzed root cause and found <strong>optimum long-term solutions</strong> to prevent recurrence.</li>
+              <li>Automated some of the manual processes of fixing production issues, <strong>reducing response
+                  time</strong> significantly.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EDUCATION ─── -->
+  <section id="education" style="background: var(--bg-secondary);">
+    <div class="container">
+      <h2 class="section-title reveal">Education</h2>
+      <span class="section-line reveal"></span>
+      <p class="section-subtitle reveal">Academic background and qualifications</p>
+
+      <div class="edu-cards-grid">
+        <div class="glass-card edu-card reveal">
+          <div class="edu-card-icon">📜</div>
+          <div class="edu-card-body">
+            <div class="edu-card-degree">PG Diploma in Advanced Computing</div>
+            <div class="edu-card-college">Sunbeam Infotech, Pune</div>
+            <div class="edu-card-year">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+              2020 – 2021
+            </div>
+            <p class="edu-card-desc">Intensive PG program in advanced computing covering Python/Django, database
+              management, system design, and industry-standard software development practices.</p>
+            <div class="skill-chips" style="margin-top:1rem;">
+              <span class="skill-chip primary">Python</span>
+              <span class="skill-chip primary">Django</span>
+              <span class="skill-chip">PostgreSQL</span>
+              <span class="skill-chip">REST APIs</span>
+              <span class="skill-chip">Linux</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card edu-card reveal">
+          <div class="edu-card-icon">🎓</div>
+          <div class="edu-card-body">
+            <div class="edu-card-degree">Bachelor of Engineering — Aeronautical Engineering</div>
+            <div class="edu-card-college">Acharya Institute of Technology, Bangalore</div>
+            <div class="edu-card-year">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+              2015 – 2019
+            </div>
+            <p class="edu-card-desc">Completed B.E. with a strong foundation in analytical thinking, systems design,
+              mathematics, and engineering principles — skills that directly power my software engineering approach.</p>
+            <div class="skill-chips" style="margin-top:1rem;">
+              <span class="skill-chip">Analytical Thinking</span>
+              <span class="skill-chip">Systems Design</span>
+              <span class="skill-chip">Mathematics</span>
+              <span class="skill-chip">Problem Solving</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title reveal">Skills</h2>
+      <span class="section-line reveal"></span>
+      <p class="section-subtitle reveal">Technologies and tools I work with daily</p>
+
+      <div class="skills-categories">
+        <!-- Backend -->
+        <div class="glass-card skill-category reveal">
+          <div class="skill-cat-icon">🐍</div>
+          <div class="skill-cat-title">Backend Development</div>
+          <div class="skill-chips">
+            <span class="skill-chip primary">Python</span>
+            <span class="skill-chip primary">Django</span>
+            <span class="skill-chip">Django REST Framework</span>
+            <span class="skill-chip">FastAPI</span>
+            <span class="skill-chip">Celery</span>
+            <span class="skill-chip">Redis</span>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="glass-card skill-category reveal">
+          <div class="skill-cat-icon">🗄️</div>
+          <div class="skill-cat-title">Databases</div>
+          <div class="skill-chips">
+            <span class="skill-chip primary">PostgreSQL</span>
+            <span class="skill-chip primary">MongoDB</span>
+            <span class="skill-chip">SQL</span>
+            <span class="skill-chip">Redis</span>
+            <span class="skill-chip">Database Migration</span>
+            <span class="skill-chip">Query Optimization</span>
+          </div>
+        </div>
+
+        <!-- Architecture -->
+        <div class="glass-card skill-category reveal">
+          <div class="skill-cat-icon">🏗️</div>
+          <div class="skill-cat-title">Architecture & Design</div>
+          <div class="skill-chips">
+            <span class="skill-chip primary">Microservices</span>
+            <span class="skill-chip primary">REST APIs</span>
+            <span class="skill-chip">System Design</span>
+            <span class="skill-chip">MIFA Analysis</span>
+            <span class="skill-chip">BPM Automation</span>
+            <span class="skill-chip">Event-Driven</span>
+          </div>
+        </div>
+
+        <!-- DevOps -->
+        <div class="glass-card skill-category reveal">
+          <div class="skill-cat-icon">⚙️</div>
+          <div class="skill-cat-title">DevOps & Tools</div>
+          <div class="skill-chips">
+            <span class="skill-chip primary">Docker</span>
+            <span class="skill-chip">Kubernetes</span>
+            <span class="skill-chip">Git & GitHub</span>
+            <span class="skill-chip">CI/CD</span>
+            <span class="skill-chip">Linux</span>
+            <span class="skill-chip">Nginx</span>
+          </div>
+        </div>
+
+        <!-- Core Proficiency -->
+        <div class="glass-card skill-category reveal" style="grid-column: span 2;">
+          <div class="skill-cat-icon">📊</div>
+          <div class="skill-cat-title">Core Proficiency Levels</div>
+          <div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Python / Django</span><span>95%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="95%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>PostgreSQL</span><span>88%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="88%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>REST API Design</span><span>92%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="92%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Microservices Architecture</span><span>85%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>MongoDB</span><span>80%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="glass-card skill-category reveal">
+          <div class="skill-cat-icon">🤝</div>
+          <div class="skill-cat-title">Soft Skills</div>
+          <div class="skill-chips">
+            <span class="skill-chip">Team Leadership</span>
+            <span class="skill-chip">Requirement Gathering</span>
+            <span class="skill-chip">Problem Solving</span>
+            <span class="skill-chip">Agile / Scrum</span>
+            <span class="skill-chip">Code Review</span>
+            <span class="skill-chip">Mentoring</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title reveal">Projects & Highlights</h2>
+      <span class="section-line reveal"></span>
+      <p class="section-subtitle reveal">Key technical achievements and project contributions</p>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="glass-card project-card reveal">
+          <div class="project-icon">🚀</div>
+          <div class="project-title">Fleet Management Automation Platform</div>
+          <p class="project-desc">
+            Led end-to-end engineering for a fleet automation product at Ridecell. Gathered requirements, designed MIFA
+            workflows, and converted manual business processes into fully automated pipelines integrated with ERP
+            systems.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Django</span>
+            <span class="project-tag">PostgreSQL</span>
+            <span class="project-tag">Celery</span>
+            <span class="project-tag">REST APIs</span>
+          </div>
+          <div class="project-links">
+            <span style="color:var(--accent-2);font-size:0.82rem;font-weight:500;">✦ Production at Ridecell</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="glass-card project-card reveal">
+          <div class="project-icon">🔄</div>
+          <div class="project-title">MongoDB → PostgreSQL Database Migration</div>
+          <p class="project-desc">
+            Successfully planned and executed a full database migration for a critical production microservice, moving
+            from MongoDB to PostgreSQL. Ensured zero data loss, minimal downtime, and improved query efficiency and data
+            integrity post-migration.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">MongoDB</span>
+            <span class="project-tag">PostgreSQL</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Data Engineering</span>
+            <span class="project-tag">Microservices</span>
+          </div>
+          <div class="project-links">
+            <span style="color:var(--gold);font-size:0.82rem;font-weight:500;">⭐ Zero-downtime migration</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="glass-card project-card reveal">
+          <div class="project-icon">⚙️</div>
+          <div class="project-title">Microservices API Gateway</div>
+          <p class="project-desc">
+            Architected and implemented a robust REST API layer across multiple microservices for a mobility platform.
+            Designed service boundaries, inter-service communication patterns, and implemented authentication, rate
+            limiting, and observability.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Django REST</span>
+            <span class="project-tag">Microservices</span>
+            <span class="project-tag">JWT Auth</span>
+            <span class="project-tag">Redis</span>
+            <span class="project-tag">Docker</span>
+          </div>
+          <div class="project-links">
+            <span style="color:var(--accent-2);font-size:0.82rem;font-weight:500;">✦ Production at Ridecell</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="glass-card project-card reveal">
+          <div class="project-icon">📊</div>
+          <div class="project-title">Business Process Automation (MIFA → BPA)</div>
+          <p class="project-desc">
+            Transformed complex manual MIFA (as-is) processes into automated business workflows. Worked closely with
+            product, business, and ops teams to identify automation opportunities, reducing manual effort by significant
+            margins across 3 successful product launches.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Celery</span>
+            <span class="project-tag">Django</span>
+            <span class="project-tag">Process Automation</span>
+            <span class="project-tag">BPM</span>
+          </div>
+          <div class="project-links">
+            <span style="color:var(--gold);font-size:0.82rem;font-weight:500;">⭐ 3 Successful Product Launches</span>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="glass-card project-card reveal">
+          <div class="project-icon">📚</div>
+          <div class="project-title">Engineering Portfolio — This Site</div>
+          <p class="project-desc">
+            A fully responsive, modern dark-theme portfolio website showcasing professional experience, skills, and
+            projects. Built with vanilla HTML, CSS, and JavaScript featuring glassmorphism, particle animations, typed
+            text, and scroll-based reveals.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">HTML5</span>
+            <span class="project-tag">CSS3</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Animations</span>
+            <span class="project-tag">Responsive</span>
+          </div>
+          <div class="project-links">
+            <span style="color:var(--accent-2);font-size:0.82rem;font-weight:500;">✦ You are here!</span>
+          </div>
+        </div>
+
+        <!-- Project 6 — Placeholder Idea -->
+        <div class="glass-card project-card reveal"
+          style="background: linear-gradient(135deg, rgba(99,102,241,0.06), rgba(6,182,212,0.06));">
+          <div class="project-icon">🌐</div>
+          <div class="project-title">Mobility SaaS Platform</div>
+          <p class="project-desc">
+            End-to-end SaaS platform enabling fleet operators to manage vehicles, drivers, bookings, and telematics
+            data. Built on a composable microservices stack with real-time event streaming and a multi-tenant backend
+            architecture at Ridecell.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Multi-tenant</span>
+            <span class="project-tag">Event Streaming</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">PostgreSQL</span>
+            <span class="project-tag">Kubernetes</span>
+          </div>
+          <div class="project-links">
+            <span style="color:var(--accent-3);font-size:0.82rem;font-weight:500;">✦ Enterprise Scale</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title reveal">Get In Touch</h2>
+      <span class="section-line reveal"></span>
+      <p class="section-subtitle reveal">Feel free to reach out — always open to new opportunities and collaborations
+      </p>
+
+      <div class="contact-grid">
+        <!-- Info -->
+        <div class="reveal">
+          <div class="glass-card contact-info-card">
+            <h3>Let's Connect 👋</h3>
+            <p>Whether you have an exciting opportunity, a technical challenge to discuss, or just want to chat about
+              Python and distributed systems — my inbox is always open.</p>
+
+            <div class="contact-links">
+              <a href="tel:+917666530679" class="contact-link-item">
+                <div class="cli-icon">📱</div>
+                <div class="cli-text">
+                  <span class="cli-label">Phone</span>
+                  <span class="cli-value">+91 7666530679</span>
+                </div>
+              </a>
+              <a href="mailto:mahesh.biradar9702@gmail.com" class="contact-link-item">
+                <div class="cli-icon">✉️</div>
+                <div class="cli-text">
+                  <span class="cli-label">Email</span>
+                  <span class="cli-value">mahesh.biradar9702@gmail.com</span>
+                </div>
+              </a>
+              <a href="https://linkedin.com/in/mahesh-biradar" target="_blank" rel="noopener" class="contact-link-item">
+                <div class="cli-icon">💼</div>
+                <div class="cli-text">
+                  <span class="cli-label">LinkedIn</span>
+                  <span class="cli-value">linkedin.com/in/mahesh-biradar</span>
+                </div>
+              </a>
+              <a href="https://github.com/mahesh-biradar" target="_blank" rel="noopener" class="contact-link-item">
+                <div class="cli-icon">🐙</div>
+                <div class="cli-text">
+                  <span class="cli-label">GitHub</span>
+                  <span class="cli-value">github.com/mahesh-biradar</span>
+                </div>
+              </a>
+            </div>
+
+            <div style="margin-top:1.75rem;">
+              <div
+                style="font-size:0.78rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.75rem;font-weight:600;">
+                Languages I Speak</div>
+              <div class="lang-chips">
+                <span class="lang-chip">🇬🇧 English</span>
+                <span class="lang-chip">🇮🇳 Hindi</span>
+                <span class="lang-chip">🏡 Kannada</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="reveal">
+          <div class="glass-card contact-form-card">
+            <h3>Send a Message</h3>
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Job Opportunity / Collaboration" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message"
+                  placeholder="Tell me more about the opportunity or what you'd like to discuss…" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+                Send Message
+              </button>
+            </form>
+            <div class="form-success" id="form-success">
+              <div style="font-size:2.5rem;margin-bottom:0.5rem;">🎉</div>
+              <div style="font-size:1.1rem;font-weight:700;color:var(--text-primary);margin-bottom:0.3rem;">Message
+                Received!</div>
+              <div style="color:var(--text-secondary);font-size:0.9rem;">Thanks for reaching out. I'll get back to you
+                soon.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <p>Crafted with <span>♥</span> by <strong>Mahesh Biradar</strong> · Senior Software Engineer · Pune, India</p>
+    <p style="margin-top:0.4rem;font-size:0.78rem;">© 2025 Mahesh Biradar. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
