@@ -3,24 +3,18 @@
 // ─── Navigation: scroll + active link ───
 const nav = document.querySelector('nav');
 const navLinks = document.querySelectorAll('.nav-links a');
-const sections = document.querySelectorAll('section[id]');
 const hamburger = document.querySelector('.hamburger');
 const navLinksList = document.querySelector('.nav-links');
 
 window.addEventListener('scroll', () => {
-  // Scrolled class
   nav.classList.toggle('scrolled', window.scrollY > 50);
+});
 
-  // Active link highlight
-  let current = '';
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 100;
-    if (window.scrollY >= sectionTop) current = section.getAttribute('id');
-  });
-  navLinks.forEach(link => {
-    link.classList.remove('active');
-    if (link.getAttribute('href') === `#${current}`) link.classList.add('active');
-  });
+// Highlight the nav link matching the current page (multi-page site — not scroll-based)
+const currentPage = location.pathname.split('/').pop() || 'index.html';
+navLinks.forEach(link => {
+  const linkPage = link.getAttribute('href').split('/').pop();
+  link.classList.toggle('active', linkPage === currentPage);
 });
 
 // Hamburger menu

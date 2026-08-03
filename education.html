@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education — Mahesh Biradar</title>
+  <meta name="description"
+    content="Mahesh Biradar's academic background — PG Certificate in Forward Deployed AI Engineering (IIT Roorkee), PG Diploma in Advanced Computing, and B.E. in Aeronautical Engineering." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+
+<body>
+
+  <!-- Particle Canvas -->
+  <canvas id="particle-canvas" style="position:fixed;inset:0;pointer-events:none;z-index:0;opacity:0.4;"></canvas>
+
+  <!-- ─── NAVIGATION ─── -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">&lt;MB /&gt;</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─── EDUCATION ─── -->
+  <section id="education" class="page-section">
+    <div class="container">
+      <h2 class="section-title reveal">Education</h2>
+      <span class="section-line reveal"></span>
+      <p class="section-subtitle reveal">Academic background and qualifications</p>
+
+      <div class="edu-cards-grid">
+        <div class="glass-card edu-card reveal">
+          <div class="edu-card-icon">🤖</div>
+          <div class="edu-card-body">
+            <div class="edu-card-degree">PG Certificate — Forward Deployed AI Engineering</div>
+            <div class="edu-card-college">IIT Roorkee (Continuing Education Centre)</div>
+            <div class="edu-card-year">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+              2026 – Ongoing
+            </div>
+            <p class="edu-card-desc">Covers AI deployment fundamentals, prompt engineering, RAG systems, agentic AI,
+              and production readiness for enterprise AI deployments.</p>
+            <div class="skill-chips" style="margin-top:1rem;">
+              <span class="skill-chip primary">Agentic AI</span>
+              <span class="skill-chip primary">Prompt Engineering</span>
+              <span class="skill-chip">RAG</span>
+              <span class="skill-chip">LLM Integration</span>
+              <span class="skill-chip">AI Deployment</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card edu-card reveal">
+          <div class="edu-card-icon">📜</div>
+          <div class="edu-card-body">
+            <div class="edu-card-degree">PG Diploma in Advanced Computing</div>
+            <div class="edu-card-college">CDAC Sunbeam Infotech, Pune</div>
+            <div class="edu-card-year">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+              Feb 2020 – Feb 2021
+            </div>
+            <p class="edu-card-desc">Intensive PG program in advanced computing covering Python/Django, database
+              management, system design, and industry-standard software development practices.</p>
+            <div class="skill-chips" style="margin-top:1rem;">
+              <span class="skill-chip primary">Python</span>
+              <span class="skill-chip primary">Django</span>
+              <span class="skill-chip">PostgreSQL</span>
+              <span class="skill-chip">REST APIs</span>
+              <span class="skill-chip">Linux</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card edu-card reveal">
+          <div class="edu-card-icon">🎓</div>
+          <div class="edu-card-body">
+            <div class="edu-card-degree">Bachelor of Engineering — Aeronautical Engineering</div>
+            <div class="edu-card-college">Acharya Institute of Technology, Bangalore</div>
+            <div class="edu-card-year">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+              Aug 2015 – Jun 2019
+            </div>
+            <p class="edu-card-desc">Completed B.E. with a strong foundation in analytical thinking, systems design,
+              mathematics, and engineering principles — skills that directly power my software engineering approach.</p>
+            <div class="skill-chips" style="margin-top:1rem;">
+              <span class="skill-chip">Analytical Thinking</span>
+              <span class="skill-chip">Systems Design</span>
+              <span class="skill-chip">Mathematics</span>
+              <span class="skill-chip">Problem Solving</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Current Focus Areas -->
+      <div class="glass-card focus-card reveal" style="margin-top:2rem;padding:1.75rem 2rem;">
+        <div class="focus-card-title">🎯 Current Focus Areas</div>
+        <ul class="achievement-list">
+          <li>Enrolled in the <strong>PG Certificate Program in Forward Deployed AI Engineering — IIT Roorkee</strong>
+            (Continuing Education Centre) — covering AI deployment fundamentals, prompt engineering, RAG systems,
+            agentic AI, and production readiness for enterprise AI deployments.</li>
+          <li>Hands-on development of <strong>AI agent deployment systems</strong> — including end-to-end voice AI
+            agents integrating conversational AI platforms, workflow orchestration engines, and third-party APIs with
+            production debugging.</li>
+          <li>Actively deepening expertise in enterprise integration, LLM systems, agentic workflows, and
+            <strong>client-facing AI deployment methodologies</strong>.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Awards & Recognition -->
+      <div class="glass-card focus-card reveal" style="margin-top:1.75rem;padding:1.75rem 2rem;">
+        <div class="focus-card-title">🏆 Awards &amp; Recognition</div>
+        <ul class="achievement-list">
+          <li><strong>'The Rock' Award — Ridecell</strong>: Recognized for exemplary commitment to team functioning
+            and consistent delivery across multi-country deployment cycles.</li>
+          <li>Repeated recognition from management and team leads for outstanding <strong>debugging skills,
+              analytical problem-solving, and root cause analysis</strong> in live enterprise environments.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <p>Crafted with <span>♥</span> by <strong>Mahesh Biradar</strong> · Forward Deployed Engineer · Pune, India</p>
+    <p style="margin-top:0.4rem;font-size:0.78rem;">© 2026 Mahesh Biradar. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

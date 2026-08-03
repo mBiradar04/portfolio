@@ -7,11 +7,11 @@
 /* ─── CSS Variables ─── */
 :root {
   --bg-primary: #0a0e1a;
-  --bg-secondary: #0f1629;
-  --bg-card: rgba(255,255,255,0.04);
-  --bg-card-hover: rgba(255,255,255,0.08);
-  --border-color: rgba(255,255,255,0.08);
-  --border-hover: rgba(99,179,237,0.4);
+  --bg-secondary: #141d35;
+  --bg-card: rgba(255,255,255,0.055);
+  --bg-card-hover: rgba(255,255,255,0.095);
+  --border-color: rgba(255,255,255,0.12);
+  --border-hover: rgba(99,179,237,0.55);
 
   --accent-1: #6366f1;
   --accent-2: #06b6d4;
@@ -20,9 +20,9 @@
   --accent-gradient-2: linear-gradient(135deg, #8b5cf6, #6366f1);
   --gold: #f59e0b;
 
-  --text-primary: #f0f4ff;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
+  --text-primary: #f5f8ff;
+  --text-secondary: #a3b3c9;
+  --text-muted: #7789a3;
 
   --nav-height: 72px;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -56,9 +56,9 @@ body::before {
   position: fixed;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 60% at 20% 10%, rgba(99,102,241,0.12) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 40% at 80% 80%, rgba(6,182,212,0.10) 0%, transparent 60%),
-    radial-gradient(ellipse 50% 50% at 50% 50%, rgba(139,92,246,0.05) 0%, transparent 80%);
+    radial-gradient(ellipse 80% 60% at 20% 10%, rgba(99,102,241,0.18) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 80%, rgba(6,182,212,0.15) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 50% at 50% 50%, rgba(139,92,246,0.08) 0%, transparent 80%);
   pointer-events: none;
   z-index: -1;
 }
@@ -421,12 +421,15 @@ nav.scrolled {
 
 /* ─── Cards ─── */
 .glass-card {
+  position: relative;
+  overflow: hidden;
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
   backdrop-filter: blur(10px);
   transition: var(--transition);
 }
+.glass-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--accent-gradient); }
 .glass-card:hover {
   background: var(--bg-card-hover);
   border-color: var(--border-hover);
@@ -599,6 +602,28 @@ nav.scrolled {
 .project-links { display: flex; gap: 0.75rem; }
 .project-link { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--text-muted); font-size: 0.825rem; text-decoration: none; transition: var(--transition); }
 .project-link:hover { color: var(--accent-2); }
+
+/* ─── Highlights Section (Home page teasers) ─── */
+.highlights-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.75rem; }
+
+.highlight-card {
+  display: block;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+}
+.highlight-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--accent-gradient); }
+
+.highlight-icon { font-size: 2.2rem; margin-bottom: 1rem; }
+.highlight-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.6rem; color: var(--text-primary); }
+.highlight-desc { color: var(--text-secondary); font-size: 0.875rem; line-height: 1.7; margin-bottom: 1.1rem; }
+.highlight-link { color: var(--accent-2); font-size: 0.85rem; font-weight: 600; transition: var(--transition); }
+.highlight-card:hover .highlight-link { color: var(--accent-1); }
+
+/* ─── Contact CTA Section (Home page) ─── */
+#contact-cta .section-subtitle { max-width: 640px; margin-left: auto; margin-right: auto; }
 
 /* ─── Contact Section ─── */
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
