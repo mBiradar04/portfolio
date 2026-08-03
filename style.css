@@ -287,8 +287,9 @@ nav.scrolled {
 
 .hero-buttons {
   display: flex;
-  gap: 1rem;
+  gap: 0.85rem;
   flex-wrap: wrap;
+  align-items: center;
   animation: fade-up 0.6s ease 0.4s forwards;
   opacity: 0;
 }
@@ -385,15 +386,16 @@ nav.scrolled {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.75rem;
+  padding: 0.7rem 1.4rem;
   border-radius: 50px;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   text-decoration: none;
   transition: var(--transition);
   cursor: pointer;
   border: none;
   font-family: 'Inter', sans-serif;
+  white-space: nowrap;
 }
 
 .btn-primary {
@@ -409,6 +411,13 @@ nav.scrolled {
   border: 1px solid var(--border-color);
 }
 .btn-outline:hover { border-color: var(--accent-1); color: var(--accent-1); transform: translateY(-2px); background: rgba(99,102,241,0.05); }
+
+.btn-accent {
+  background: rgba(245,158,11,0.1);
+  color: var(--gold);
+  border: 1px solid rgba(245,158,11,0.4);
+}
+.btn-accent:hover { background: rgba(245,158,11,0.18); border-color: var(--gold); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(245,158,11,0.2); }
 
 /* ─── Cards ─── */
 .glass-card {
