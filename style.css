@@ -618,6 +618,60 @@ nav.scrolled {
 
 .projects-grid > .project-card:nth-child(even)::before { background: var(--accent-gradient-2); }
 
+/* ─── Career Growth Timeline (Home page) ─── */
+.growth-timeline { position: relative; max-width: 720px; margin: 0 auto; }
+.growth-timeline.reveal { opacity: 1; transform: none; transition: none; }
+
+.growth-timeline::before {
+  content: '';
+  position: absolute;
+  left: 24px;
+  top: 6px; bottom: 6px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent-1), var(--accent-2), var(--accent-1), var(--accent-2));
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 1.4s cubic-bezier(0.4, 0, 0.2, 1) 0.15s;
+}
+.growth-timeline.visible::before { transform: scaleY(1); }
+
+.growth-item { display: flex; gap: 1.5rem; margin-bottom: 2rem; position: relative; }
+.growth-item:last-child { margin-bottom: 0; }
+
+.growth-dot {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  border: 3px solid var(--accent-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+  transition: var(--transition);
+}
+.growth-item:nth-child(even) .growth-dot { border-color: var(--accent-2); }
+.growth-item.growth-parallel .growth-dot { border-style: dashed; border-color: var(--accent-2); }
+
+.growth-content { flex: 1; padding-top: 0.4rem; }
+.growth-role { font-size: 1.02rem; font-weight: 700; color: var(--text-primary); display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; text-align: left; }
+.growth-period { font-size: 0.82rem; color: var(--text-muted); margin-top: 0.3rem; text-align: left; }
+
+.growth-tag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.18rem 0.55rem;
+  border-radius: 20px;
+  background: rgba(20,184,166,0.14);
+  border: 1px solid rgba(20,184,166,0.3);
+  color: var(--accent-2);
+}
+
 /* ─── Highlights Section (Home page teasers) ─── */
 .highlights-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.75rem; }
 
@@ -763,4 +817,7 @@ footer span { color: var(--accent-1); }
   .hero-stats { gap: 1rem; }
   .profile-glow-wrap { width: 220px; height: 220px; }
   .tf-1, .tf-2, .tf-3 { display: none; }
+  .growth-item { gap: 1rem; }
+  .growth-dot { width: 40px; height: 40px; font-size: 1rem; }
+  .growth-timeline::before { left: 19px; }
 }
