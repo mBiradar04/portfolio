@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Skills — Mahesh Biradar</title>
   <meta name="description"
-    content="Mahesh Biradar's technical skills — Python, Django, PostgreSQL, MongoDB, Microservices, REST API design, and AI & automation including agentic AI, RAG, and LLM integration." />
+    content="Mahesh Biradar's technical skills — Python, Django, and PostgreSQL lead, alongside solution architecture and stakeholder work, with voice AI, n8n, and RAG as newer, growing focus areas." />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
@@ -14,13 +14,16 @@
 
 <body>
 
-  <!-- Particle Canvas -->
-  <canvas id="particle-canvas" style="position:fixed;inset:0;pointer-events:none;z-index:0;opacity:0.4;"></canvas>
-
   <!-- ─── NAVIGATION ─── -->
   <nav>
     <div class="nav-container">
-      <a href="index.html" class="nav-logo">&lt;MB /&gt;</a>
+      <div class="nav-left">
+        <a href="index.html" class="nav-logo">MB</a>
+        <div class="nav-status">
+          <span class="status-dot"></span>
+          Open to conversations
+        </div>
+      </div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="experience.html">Experience</a></li>
@@ -36,131 +39,103 @@
   </nav>
 
   <!-- ─── SKILLS ─── -->
-  <section id="skills" class="page-section">
+  <section id="skills" class="page-section" style="padding-top: calc(var(--nav-height) + 3rem);">
     <div class="container">
       <h2 class="section-title reveal">Skills</h2>
-      <span class="section-line reveal"></span>
-      <p class="section-subtitle reveal">Technologies and tools I work with daily</p>
+      <p class="section-subtitle reveal">Ordered by what I actually use most, not what's newest.</p>
 
-      <div class="skills-categories">
-        <!-- Backend -->
-        <div class="glass-card skill-category reveal">
-          <div class="skill-cat-icon">🐍</div>
-          <div class="skill-cat-title">Languages & Frameworks</div>
-          <div class="skill-chips">
-            <span class="skill-chip primary">Python</span>
-            <span class="skill-chip primary">Django</span>
-            <span class="skill-chip">Django REST Framework</span>
-            <span class="skill-chip">JavaScript</span>
-            <span class="skill-chip">HTML / CSS</span>
+      <div class="skills-group reveal">
+        <div class="skills-group-title">Core strengths</div>
+
+        <div class="skill-row">
+          <div class="skill-row-header"><span class="skill-name">Python &amp; Django</span><span
+              class="skill-level">daily</span></div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="95%"></div>
           </div>
         </div>
 
-        <!-- Databases -->
-        <div class="glass-card skill-category reveal">
-          <div class="skill-cat-icon">🗄️</div>
-          <div class="skill-cat-title">Databases</div>
-          <div class="skill-chips">
-            <span class="skill-chip primary">PostgreSQL</span>
-            <span class="skill-chip primary">MongoDB</span>
-            <span class="skill-chip">MySQL</span>
-            <span class="skill-chip">Schema Design</span>
-            <span class="skill-chip">Database Migration</span>
-            <span class="skill-chip">Query Optimization</span>
+        <div class="skill-row">
+          <div class="skill-row-header"><span class="skill-name">Solution architecture &amp; API design</span><span
+              class="skill-level">daily</span></div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="92%"></div>
           </div>
         </div>
 
-        <!-- Architecture -->
-        <div class="glass-card skill-category reveal">
-          <div class="skill-cat-icon">🏗️</div>
-          <div class="skill-cat-title">Architecture & Integration</div>
-          <div class="skill-chips">
-            <span class="skill-chip primary">Microservices</span>
-            <span class="skill-chip primary">REST API Design</span>
-            <span class="skill-chip">Event-Driven Systems</span>
-            <span class="skill-chip">Multi-Tenant Architecture</span>
-            <span class="skill-chip">Webhook Orchestration</span>
-            <span class="skill-chip">Distributed Systems</span>
+        <div class="skill-row">
+          <div class="skill-row-header"><span class="skill-name">PostgreSQL &amp; database design</span><span
+              class="skill-level">daily</span></div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="90%"></div>
           </div>
         </div>
 
-        <!-- AI & Automation -->
-        <div class="glass-card skill-category reveal">
-          <div class="skill-cat-icon">🤖</div>
-          <div class="skill-cat-title">AI & Automation</div>
-          <div class="skill-chips">
-            <span class="skill-chip primary">Agentic AI</span>
-            <span class="skill-chip primary">Prompt Engineering</span>
-            <span class="skill-chip">LLM Integration</span>
-            <span class="skill-chip">RAG Concepts</span>
-            <span class="skill-chip">n8n Workflow Automation</span>
-            <span class="skill-chip">ElevenLabs Conversational AI</span>
+        <div class="skill-row">
+          <div class="skill-row-header"><span class="skill-name">REST APIs &amp; microservices</span><span
+              class="skill-level">frequent</span></div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="88%"></div>
           </div>
         </div>
 
-        <!-- DevOps -->
-        <div class="glass-card skill-category reveal">
-          <div class="skill-cat-icon">⚙️</div>
-          <div class="skill-cat-title">DevOps & Tools</div>
-          <div class="skill-chips">
-            <span class="skill-chip primary">Docker</span>
-            <span class="skill-chip">Git & GitHub</span>
-            <span class="skill-chip">CI/CD</span>
-            <span class="skill-chip">Jira</span>
-            <span class="skill-chip">Sumo Logic</span>
-            <span class="skill-chip">Periscope</span>
+        <div class="skill-row">
+          <div class="skill-row-header"><span class="skill-name">Client-facing consulting &amp; stakeholder
+              management</span><span class="skill-level">frequent</span></div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="85%"></div>
           </div>
         </div>
 
-        <!-- Core Proficiency -->
-        <div class="glass-card skill-category skill-category-wide reveal">
-          <div class="skill-cat-icon">📊</div>
-          <div class="skill-cat-title">Core Proficiency Levels</div>
-          <div>
-            <div class="skill-bar-item">
-              <div class="skill-bar-header"><span>Python / Django</span><span>95%</span></div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" data-width="95%"></div>
-              </div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-bar-header"><span>Solution Architecture & API Design</span><span>92%</span></div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" data-width="92%"></div>
-              </div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-bar-header"><span>PostgreSQL</span><span>88%</span></div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" data-width="88%"></div>
-              </div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-bar-header"><span>Multi-Country Stakeholder Management</span><span>85%</span></div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" data-width="85%"></div>
-              </div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-bar-header"><span>AI Agent & LLM Integration</span><span>75%</span></div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" data-width="75%"></div>
-              </div>
-            </div>
+        <div class="skill-row">
+          <div class="skill-row-header"><span class="skill-name">MongoDB</span><span
+              class="skill-level">occasional</span></div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="78%"></div>
           </div>
         </div>
 
-        <!-- Soft Skills -->
-        <div class="glass-card skill-category reveal">
-          <div class="skill-cat-icon">🤝</div>
-          <div class="skill-cat-title">Consulting & Methodology</div>
-          <div class="skill-chips">
-            <span class="skill-chip">Client-Facing Consulting</span>
-            <span class="skill-chip">Stakeholder Management</span>
-            <span class="skill-chip">Business-to-Technical Translation</span>
-            <span class="skill-chip">Agile / Scrum</span>
-            <span class="skill-chip">Root Cause Analysis</span>
-            <span class="skill-chip">Mentoring</span>
+        <div class="skill-row">
+          <div class="skill-row-header"><span class="skill-name">Docker, CI/CD &amp; Git</span><span
+              class="skill-level">occasional</span></div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="75%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-group growing reveal">
+        <div class="skills-group-title">Growing — since moving into voice AI</div>
+
+        <div class="skill-row">
+          <div class="skill-row-header"><span class="skill-name">Voice AI &amp; conversational platforms</span><span
+              class="skill-level">daily</span></div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="68%"></div>
+          </div>
+        </div>
+
+        <div class="skill-row">
+          <div class="skill-row-header"><span class="skill-name">n8n workflow automation</span><span
+              class="skill-level">frequent</span></div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="65%"></div>
+          </div>
+        </div>
+
+        <div class="skill-row">
+          <div class="skill-row-header"><span class="skill-name">Prompt engineering &amp; agentic AI</span><span
+              class="skill-level">frequent</span></div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="62%"></div>
+          </div>
+        </div>
+
+        <div class="skill-row">
+          <div class="skill-row-header"><span class="skill-name">RAG &amp; LLM integration</span><span
+              class="skill-level">learning</span></div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="58%"></div>
           </div>
         </div>
       </div>
@@ -169,8 +144,8 @@
 
   <!-- ─── FOOTER ─── -->
   <footer>
-    <p>Crafted with <span>♥</span> by <strong>Mahesh Biradar</strong> · Solution Engineer @ Lexafide · Pune, India</p>
-    <p style="margin-top:0.4rem;font-size:0.78rem;">© 2026 Mahesh Biradar. All rights reserved.</p>
+    <p><span class="footer-name">Mahesh Biradar</span> — Solutions Engineer, Lexafide</p>
+    <p style="margin-top:0.3rem;">Pune, India — © 2026</p>
   </footer>
 
   <script src="script.js"></script>
