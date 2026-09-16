@@ -571,6 +571,8 @@ nav.scrolled {
   padding: 1.75rem;
 }
 
+.skill-category-wide { grid-column: span 2; }
+
 .skill-cat-icon { font-size: 2rem; margin-bottom: 0.75rem; }
 .skill-cat-title { font-size: 1rem; font-weight: 700; margin-bottom: 1.25rem; color: var(--text-primary); }
 
@@ -814,6 +816,7 @@ footer span { color: var(--accent-1); }
   }
   section { padding: 4rem 0; }
   .skills-categories { grid-template-columns: 1fr; }
+  .skill-category-wide { grid-column: span 1; }
   .hero-stats { gap: 1rem; }
   .profile-glow-wrap { width: 220px; height: 220px; }
   .tf-1, .tf-2, .tf-3 { display: none; }

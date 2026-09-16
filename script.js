@@ -55,7 +55,7 @@ document.querySelectorAll('.skill-bar-item').forEach(item => barObserver.observe
 
 // ─── Typed text effect ───
 const typedEl = document.getElementById('typed-text');
-const roles = ['Forward Deployed Engineer', 'Solutions Engineer', 'Solution Architect', 'Senior Software Engineer', 'AI Agent Developer'];
+const roles = ['Solution Engineer', 'Voice AI Agent Developer', 'Forward Deployed Engineer', 'Solution Architect', 'Senior Software Engineer'];
 let roleIdx = 0, charIdx = 0, deleting = false;
 
 function typeEffect() {
