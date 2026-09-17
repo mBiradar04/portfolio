@@ -17,20 +17,14 @@
   <!-- ─── NAVIGATION ─── -->
   <nav>
     <div class="nav-container">
-      <div class="nav-left">
-        <a href="index.html" class="nav-logo">MB</a>
-        <div class="nav-status">
-          <span class="status-dot"></span>
-          Open to conversations
-        </div>
-      </div>
+      <a href="index.html" class="nav-logo">MB</a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="experience.html">Experience</a></li>
         <li><a href="education.html">Education</a></li>
         <li><a href="skills.html">Skills</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="hamburger" id="hamburger">
         <span></span><span></span><span></span>
@@ -38,12 +32,17 @@
     </div>
   </nav>
 
-  <!-- ─── CONTACT ─── -->
-  <section id="contact" class="page-section" style="padding-top: calc(var(--nav-height) + 3rem);">
+  <!-- ─── PAGE HEADER ─── -->
+  <section class="band-dark page-header">
     <div class="container">
       <h2 class="section-title reveal">Get in touch</h2>
       <p class="section-subtitle reveal">Feel free to reach out — always happy to talk shop or collaborate.</p>
+    </div>
+  </section>
 
+  <!-- ─── CONTACT ─── -->
+  <section id="contact" class="band-light">
+    <div class="container">
       <div class="contact-grid">
         <!-- Info -->
         <div class="reveal">
@@ -129,10 +128,10 @@
                 message</button>
             </form>
             <div class="form-success" id="form-success">
-              <div style="font-size:1.1rem;font-weight:600;color:var(--ink);margin-bottom:0.3rem;">Message
+              <div style="font-size:1.1rem;font-weight:600;color:var(--text);margin-bottom:0.3rem;">Message
                 received</div>
-              <div style="color:var(--muted);font-size:0.9rem;">Thanks for reaching out. I'll get back to you
-                soon.</div>
+              <div style="color:var(--text-secondary);font-size:0.9rem;">Thanks for reaching out. I'll get back
+                to you soon.</div>
             </div>
           </div>
         </div>
@@ -141,7 +140,7 @@
   </section>
 
   <!-- ─── FOOTER ─── -->
-  <footer>
+  <footer class="band-tint">
     <p><span class="footer-name">Mahesh Biradar</span> — Solutions Engineer, Lexafide</p>
     <p style="margin-top:0.3rem;">Pune, India — © 2026</p>
   </footer>

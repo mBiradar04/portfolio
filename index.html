@@ -22,20 +22,14 @@
   <!-- ─── NAVIGATION ─── -->
   <nav>
     <div class="nav-container">
-      <div class="nav-left">
-        <a href="index.html" class="nav-logo">MB</a>
-        <div class="nav-status">
-          <span class="status-dot"></span>
-          Open to conversations
-        </div>
-      </div>
+      <a href="index.html" class="nav-logo">MB</a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="experience.html">Experience</a></li>
         <li><a href="education.html">Education</a></li>
         <li><a href="skills.html">Skills</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="hamburger" id="hamburger">
         <span></span><span></span><span></span>
@@ -44,9 +38,13 @@
   </nav>
 
   <!-- ─── HOME / HERO ─── -->
-  <section id="home">
+  <section id="home" class="band-dark">
     <div class="hero-inner">
       <div class="hero-content">
+        <div class="hero-live reveal">
+          <span class="status-dot"></span>
+          Open to conversations
+        </div>
         <div class="eyebrow reveal">Solutions Engineer · FDE</div>
         <h1 class="hero-name reveal">I turn what a client actually needs into <span class="accent">a system that
             ships</span>.</h1>
@@ -56,12 +54,13 @@
           leading multi-country platform launches at Ridecell as the technical bridge between engineering and
           the client.
         </p>
+
         <div class="hero-buttons reveal">
           <a href="projects.html" class="btn btn-primary">View projects</a>
-          <a href="contact.html" class="btn btn-outline">Get in touch</a>
-          <a href="Mahesh_Biradar_Resume.pdf" download="Mahesh_Biradar_Resume.pdf" class="btn btn-ghost">Download
-            resume</a>
+          <a href="contact.html" class="chevron-link">Get in touch</a>
         </div>
+
+        <div class="hero-divider reveal"></div>
 
         <div class="hero-stats reveal">
           <div class="stat-item">
@@ -83,23 +82,25 @@
         </div>
       </div>
 
-      <div class="hero-visual reveal">
-        <div class="profile-frame">
-          <img src="profile.jpeg" alt="Mahesh Biradar" />
-        </div>
-        <div class="waveform-card">
-          <div class="waveform-label">
-            <span class="rec">listening</span>
-            <span>voice session</span>
+      <div class="hero-side">
+        <div class="hero-visual reveal">
+          <div class="profile-frame">
+            <img src="profile.jpeg" alt="Mahesh Biradar" />
           </div>
-          <canvas id="waveform-canvas"></canvas>
+          <div class="waveform-card">
+            <div class="waveform-label">
+              <span class="rec">listening</span>
+              <span>voice session</span>
+            </div>
+            <canvas id="waveform-canvas"></canvas>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ─── ABOUT ─── -->
-  <section id="about">
+  <section id="about" class="band-light">
     <div class="container about-grid">
       <div class="about-text reveal">
         <p>
@@ -113,6 +114,8 @@
           requirements into working software, and staying accountable for it after it ships — not just at
           launch.
         </p>
+        <p style="margin-top:1.5rem;"><a href="Mahesh_Biradar_Resume.pdf" download="Mahesh_Biradar_Resume.pdf"
+            class="chevron-link">Download resume</a></p>
       </div>
       <div class="about-facts reveal">
         <div class="about-fact">
@@ -136,7 +139,7 @@
   </section>
 
   <!-- ─── HIGHLIGHTS ─── -->
-  <section id="highlights">
+  <section id="highlights" class="band-tint">
     <div class="container">
       <h2 class="section-title reveal">A quick look</h2>
       <p class="section-subtitle reveal">The short version — full detail is one click away on each page.</p>
@@ -174,7 +177,7 @@
   </section>
 
   <!-- ─── CONTACT CTA ─── -->
-  <section id="contact-cta">
+  <section id="contact-cta" class="band-dark">
     <div class="container">
       <h2 class="section-title reveal">Let's build something</h2>
       <p class="section-subtitle reveal">
@@ -185,7 +188,7 @@
   </section>
 
   <!-- ─── FOOTER ─── -->
-  <footer>
+  <footer class="band-tint">
     <p><span class="footer-name">Mahesh Biradar</span> — Solutions Engineer, Lexafide</p>
     <p style="margin-top:0.3rem;">Pune, India — © 2026</p>
   </footer>
